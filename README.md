@@ -29,4 +29,7 @@ Tomadas sin preguntar para no bloquear la demo (ver `docs/PLAN.md`):
   las donaciones es compartido (`localStorage` + `BroadcastChannel`).
 - **Router propio por hash** en lugar de react-router (menos dependencias). `base: './'` en Vite
   para publicar la build en cualquier hosting estático.
+- **Ruta (`src/lib/ruta.js`)**: distancia en línea recta (haversine) redondeada a la baja; el
+  tiempo se redondea **hacia arriba** (no prometemos trayectos más cortos de lo que son). Coche a
+  20 km/h de media urbana (el plan solo fija a pie 5 km/h y bici 15 km/h).
 - Versiones fijadas: React 18.3, react-leaflet 4.2 (compatible con React 18), Vite 5.4.

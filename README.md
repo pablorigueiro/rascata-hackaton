@@ -30,3 +30,6 @@ Tomadas sin preguntar para no bloquear la demo (ver `docs/PLAN.md`):
 - **Router propio por hash** en lugar de react-router (menos dependencias). `base: './'` en Vite
   para publicar la build en cualquier hosting estático.
 - Versiones fijadas: React 18.3, react-leaflet 4.2 (compatible con React 18), Vite 5.4.
+- **Recorte por tiempo (30 min disponibles):** H2–H6 en un solo PR con el núcleo del guion. Voluntario sin mapa (lista de paradas); confirmación con botón en vez de deslizador; IA solo mock; sin descarga PNG, «Residuo cero» ni vista doble.
+- **Foto:** `public/demo/` está vacía; el comercio puede subir cualquier foto o usar los botones «Ejemplo» (IA mock).
+- **Modo presentación `#/presentacion`:** pantalla ancha para proyectar con contador, KPIs, actividad de hoy, gráfico mensual y ranking, en vivo vía sincronización entre pestañas.

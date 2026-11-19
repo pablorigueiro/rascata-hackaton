@@ -33,3 +33,4 @@ Tomadas sin preguntar para no bloquear la demo (ver `docs/PLAN.md`):
 - **Recorte por tiempo (30 min disponibles):** H2–H6 en un solo PR con el núcleo del guion. Voluntario sin mapa (lista de paradas); confirmación con botón en vez de deslizador; IA solo mock; sin descarga PNG, «Residuo cero» ni vista doble.
 - **Foto:** `public/demo/` está vacía; el comercio puede subir cualquier foto o usar los botones «Ejemplo» (IA mock).
 - **Modo presentación `#/presentacion`:** pantalla ancha para proyectar con contador, KPIs, actividad de hoy, gráfico mensual y ranking, en vivo vía sincronización entre pestañas.
+- **Publicación:** GitHub Pages con GitHub Actions (`.github/workflows/pages.yml`) en cada push a `main`. URL: https://pablorigueiro.github.io/rascata-hackaton/ (necesaria para que el QR del sello abra en el móvil del jurado).

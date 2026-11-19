@@ -32,3 +32,6 @@ Tomadas sin preguntar para no bloquear la demo (ver `docs/PLAN.md`):
 - Versiones fijadas: React 18.3, react-leaflet 4.2 (compatible con React 18), Vite 5.4.
 - **Sin Google Fonts**: los títulos usan fuentes redondeadas del sistema (`ui-rounded`), porque la
   única integración externa permitida es la IA y las teselas del mapa, y así la demo no depende de la red.
+- **`analizarFoto` devuelve además `origen`** (`mock` o el proveedor) y, si ha caído al mock,
+  `aviso` con el texto a mostrar. Nunca lanza por culpa de la IA. En modo `mock` no se redimensiona
+  la foto (no se envía a ningún sitio); el redimensionado se aplica antes de llamar a una IA real.

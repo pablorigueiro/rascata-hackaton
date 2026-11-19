@@ -8,6 +8,7 @@ import Entidad from './pages/Entidad.jsx'
 import Voluntario from './pages/Voluntario.jsx'
 import Impacto from './pages/Impacto.jsx'
 import SelloPublico from './pages/SelloPublico.jsx'
+import Presentacion from './pages/Presentacion.jsx'
 
 const NAV = [
   { path: '/', icono: '🏠', texto: 'Inicio' },
@@ -59,6 +60,8 @@ function Pagina({ ruta }) {
       return <Voluntario />
     case 'impacto':
       return <Impacto />
+    case 'presentacion':
+      return <Presentacion />
     case 'sello':
       return <SelloPublico id={id} datos={ruta.query.get('d')} />
     default:
@@ -73,12 +76,13 @@ function Pagina({ ruta }) {
 
 export default function App() {
   const ruta = useRuta()
-  const publica = ruta.partes[0] === 'sello'
+  const proyectar = ruta.partes[0] === 'presentacion'
+  const publica = ruta.partes[0] === 'sello' || proyectar
   const activa = '/' + (ruta.partes[0] || '')
 
   return (
     <ToastProvider>
-      <div className={`app ${publica ? 'app--publica' : ''}`}>
+      <div className={`app ${publica ? 'app--publica' : ''} ${proyectar ? 'app--proyectar' : ''}`}>
         <header className="cabecera">
           <a href="#/" className="marca">
             <span aria-hidden="true">🥖</span> Rescata

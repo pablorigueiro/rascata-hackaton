@@ -30,3 +30,5 @@ Tomadas sin preguntar para no bloquear la demo (ver `docs/PLAN.md`):
 - **Router propio por hash** en lugar de react-router (menos dependencias). `base: './'` en Vite
   para publicar la build en cualquier hosting estático.
 - Versiones fijadas: React 18.3, react-leaflet 4.2 (compatible con React 18), Vite 5.4.
+- **Sin Google Fonts**: los títulos usan fuentes redondeadas del sistema (`ui-rounded`), porque la
+  única integración externa permitida es la IA y las teselas del mapa, y así la demo no depende de la red.
